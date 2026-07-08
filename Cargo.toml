@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "axiom_core",
+    "cosmic_queue",
+    "latency_monitor",
+    "nexus",
+    "sovereign_hive",
+    "contracts/nexus_token",
+    "contracts/swarm_agent",
+    "contracts/mev_arbitrage"
+]
+resolver = "2"
