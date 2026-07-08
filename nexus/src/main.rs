@@ -1,1 +1,1 @@
-use ... full main.rs code from paste
+Full orchestrator with all initialization and wiring as pasted.

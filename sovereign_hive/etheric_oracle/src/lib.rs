@@ -1,0 +1,1 @@
+OracleFeed with ingest, ZK, verify as provided.
