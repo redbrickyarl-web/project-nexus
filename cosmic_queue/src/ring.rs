@@ -42,3 +42,14 @@ impl<T, const CAP: usize> CosmicRing<T, CAP> {
         Some(value)
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn basic_functionality() {
+        let ring = CosmicRing::<u64, 64>::new();
+        assert!(ring.try_push(42).is_ok());
+        assert_eq!(ring.try_pop(), Some(42));
+    }
+}

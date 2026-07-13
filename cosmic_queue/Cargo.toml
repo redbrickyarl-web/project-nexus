@@ -2,12 +2,17 @@
 name = "cosmic_queue"
 version.workspace = true
 edition.workspace = true
-authors.workspace = true
-
-[lib]
-name = "cosmic_queue"
 
 [dependencies]
-# Shared workspace dependencies will be added here as needed
-# tokio = { workspace = true }
-# serde = { workspace = true }
+crossbeam-utils = "0.8"
+parking_lot = "0.12"
+tokio = { version = "1", features = ["full"] }
+wasmtime = { workspace = true }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+iai = "0.1"
+
+[[bench]]
+name = "cosmic_bench"
+harness = false
