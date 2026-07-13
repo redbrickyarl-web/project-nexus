@@ -1,1 +1,1 @@
-// Full implementation code here
+// Placeholder — will be properly replaced in next real implementation step
