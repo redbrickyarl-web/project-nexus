@@ -1,3 +1,26 @@
-[dependencies]
-wasmtime = "25.0" # WASM sandbox integration
-# other deps...
+[workspace]
+members = [
+    "axiom-core",
+    "axiom-net",
+    "axiom-solana",
+    "axiom-recon",
+    "nexus",
+    "cosmic_queue",
+    "nexus_dashboard",
+    "latency_monitor",
+    "sovereign_hive",
+]
+resolver = "2"
+
+[workspace.dependencies]
+wasmtime = "25.0"  # WASM sandbox integration
+# Add your other shared dependencies here
+# Example:
+# tokio = { version = "1.0", features = ["full"] }
+# serde = { version = "1.0", features = ["derive"] }
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/redbrickyarl-web/project-nexus"
