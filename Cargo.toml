@@ -4,11 +4,9 @@ members = [
     "cosmic_queue",
     "latency_monitor",
     "nexus",
-    # "nexus_dashboard",     # currently only has index.html - add Cargo.toml if making it a crate
-    # "sovereign_hive",      # has nested structure
-    # "contracts/mev_arbitrage",
-    # "contracts/nexus_token",
-    # "contracts/swarm_agent",
+    "contracts/mev_arbitrage",
+    "contracts/nexus_token",
+    "contracts/swarm_agent",
 ]
 resolver = "2"
 
@@ -24,3 +22,4 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/redbrickyarl-web/project-nexus"
+authors = ["Dalton Rosenberg"]
