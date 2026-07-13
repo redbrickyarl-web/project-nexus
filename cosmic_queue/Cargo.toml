@@ -1,0 +1,13 @@
+[package]
+name = "cosmic_queue"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[lib]
+name = "cosmic_queue"
+
+[dependencies]
+# Shared workspace dependencies will be added here as needed
+# tokio = { workspace = true }
+# serde = { workspace = true }
