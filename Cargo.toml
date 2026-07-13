@@ -4,18 +4,16 @@ members = [
     "cosmic_queue",
     "latency_monitor",
     "nexus",
-    "contracts/mev_arbitrage",
-    "contracts/nexus_token",
-    "contracts/swarm_agent",
+    # "contracts/*",  # Temporarily excluded until fully implemented
+    # "sovereign-simulator",
 ]
 resolver = "2"
 
 [workspace.dependencies]
 wasmtime = "25.0"
-# tokio = { version = "1", features = ["full"] }
-# serde = { version = "1.0", features = ["derive"] }
-# tracing = "0.1"
-# anyhow = "1.0"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+crossbeam-utils = "0.8"
 
 [workspace.package]
 version = "0.1.0"
