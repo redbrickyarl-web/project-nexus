@@ -1,0 +1,11 @@
+[package]
+name = "sovereign-simulator"
+version.workspace = true
+edition = "2021"
+
+[dependencies]
+cosmic_queue = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
+serde = { workspace = true, features = ["derive"] }
+rand = "0.8"
+tracing = "0.1"
