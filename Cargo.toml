@@ -1,23 +1,23 @@
 [workspace]
 members = [
-    "axiom-core",
-    "axiom-net",
-    "axiom-solana",
-    "axiom-recon",
-    "nexus",
+    "axiom_core",
     "cosmic_queue",
-    "nexus_dashboard",
     "latency_monitor",
-    "sovereign_hive",
+    "nexus",
+    # "nexus_dashboard",     # currently only has index.html - add Cargo.toml if making it a crate
+    # "sovereign_hive",      # has nested structure
+    # "contracts/mev_arbitrage",
+    # "contracts/nexus_token",
+    # "contracts/swarm_agent",
 ]
 resolver = "2"
 
 [workspace.dependencies]
-wasmtime = "25.0"  # WASM sandbox integration
-# Add your other shared dependencies here
-# Example:
-# tokio = { version = "1.0", features = ["full"] }
+wasmtime = "25.0"
+# tokio = { version = "1", features = ["full"] }
 # serde = { version = "1.0", features = ["derive"] }
+# tracing = "0.1"
+# anyhow = "1.0"
 
 [workspace.package]
 version = "0.1.0"
